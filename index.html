@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+        <h2>Arithmetic Calculator</h2>
+    <hr width="90%">
+    <!--horizontal line css animation-->
+    <div class="btn">
+        <button type="button" id="add"> + </button>
+        <button type="button" id="sub"> - </button>
+        <button type="button" id="mul"> * </button>
+        <button type="button" id="div"> / </button>
+    </div>
+
+    <div class="calc">
+        <input type="number" placeholder="enter 1st no." id="num1" required><br>
+        <input type="number" placeholder="enter 2nd no." id="num2" required><br>
+
+        <input type="number" id="result" readonly>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+   var n1 = document.getElementById("num1");
+   var n2 = document.getElementById("num2");
+   var res = document.getElementById("result");
+
+   document.getElementById("add").addEventListener("click", function() {
+    res.value = parseInt(n1.value)+parseInt(n2.value);
+   });
+   document.getElementById("sub").addEventListener("click", function() {
+    res.value = parseInt(n1.value)-parseInt(n2.value);
+   });
+   document.getElementById("mul").addEventListener("click", function() {
+    res.value = parseInt(n1.value)*parseInt(n2.value);
+   });
+   document.getElementById("div").addEventListener("click", function() {
+    res.value = parseInt(n1.value)/parseInt(n2.value);
+   });
+
+
+</script>
+</html>

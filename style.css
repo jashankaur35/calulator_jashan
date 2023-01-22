@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    background:linear-gradient(45deg, #86e9b2 10%, #b676cb 90%);
+}
+.container{
+    border:1px solid blue;
+    background: linear-gradient(45deg, #d770c5 10%, #7bf1db 90%);
+    box-shadow: 3px 4px 16px #2a2121;
+    border-radius: 15px;
+}
+.container hr{
+    margin: 23px;
+}
+.container h2{
+    font-size: 29px;
+    letter-spacing: 0.3em;
+    color: #333;
+    margin: 19px;
+}
+.container .btn{
+    margin-right:20px;
+    display:flex;
+    flex-direction: column;
+    float:left;
+}
+.container .calc{
+    display: flow-root;
+    background: linear-gradient(226deg, #ff5fe4 10%, #7bf1db 90%);
+    box-shadow: 3px 4px 16px #546d72;
+    border-radius: 15px;
+}
+input[type=number]:focus{
+    outline:none;
+}
+button {
+    padding: 12px 18px;
+    margin-left: 10px;
+    font-size: 20px;
+    background:linear-gradient(45deg, #ff5fe4 10%, #7bf1db 90%);
+    color:#fff;
+    border-radius: 50%;
+    border: ridge;
+}
+input[type=number] {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    font-size: 20px;
+    border: 3px solid #ccc;
+    border-radius:15px;
+}
+input#result{
+       background: linear-gradient(45deg, #ff5fe4 10%, #7bf1db 90%);;
+    color:#fff;
+}
